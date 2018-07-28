@@ -1,0 +1,18 @@
+<view class="top-wrapper">
+<scroll-view scroll-x class="scroll">
+  <view class="news-tab">
+    <view class="news-country" wx:for="{{newsCountry}}" wx:key>{{item}}</view>
+  </view>
+</scroll-view>
+</view>
+
+
+
+<view class="news-item" wx:for="{{newsItem}}" wx:key>
+  <view class="news-words">
+    <view class="news-title">{{item.newsTitle}}</view>
+    <view class="news-author">{{item.newsAuthor}}</view>
+    <view class="news-time">{{item.newsTime}}</view>
+  </view>
+  <image class="news-image" src="{{item.newsImage}}" mode="scaleToFill"></image>
+</view>
