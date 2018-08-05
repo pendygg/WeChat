@@ -1,7 +1,17 @@
+.justBlock {
+  height: 120rpx;
+}
+
+.top-wrapper {
+  position: fixed;
+  z-index: 10;
+}
+
 .scroll {
+  position: fixed;
   padding-top: 24rpx;
   padding-bottom: 24rpx;
-  background-color: moccasin;
+  color: white;
 }
 
 .news-tab {
@@ -21,31 +31,37 @@
   line-height: 42rpx;
   text-align: center;
   opacity: 0.8;
-
 }
 
 .news-item {
   display: flex;
   position: relative;
   height: 200rpx;
-  margin-top: 10rpx;
-  margin-bottom: 10rpx;
+  margin: 0 10rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+  margin: 5rpx;
+  width: 33%;
+  height: 190rpx;
+  z-index: -1;
 }
 
 .news-words {
-  position: absolute;
   display: flex;
-  width: 66%;
   flex-direction:column;
+  width: 66%;
   align-items: left;
-
+  height: 100%;
 }
 
 .news-title {
+  flex-grow: 1;
   text-align:left;
   font-size: 30rpx;
   line-height: 42rpx;
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 .news-author {
@@ -61,14 +77,3 @@
   line-height: 28rpx;
   opacity: 0.65;
 }
-
-.news-image {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0; 
-  width: 33%;
-  height: 100%;
-  z-index: -1;
-}
-

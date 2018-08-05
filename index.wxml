@@ -1,15 +1,18 @@
 <view class="top-wrapper">
-<scroll-view scroll-x class="scroll">
-  <view class="news-tab">
-    <view class="news-country" wx:for="{{newsCountry}}" wx:key>{{item}}</view>
-  </view>
-</scroll-view>
+  <scroll-view scroll-x class="scroll" style="background-color:{{menuColor}}">
+    <view class="news-tab">
+      <view class="news-country" wx:for="{{newsCountry}}" wx:key bindtap='onTapCountry' id="{{item}}">
+      {{item}}</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="justBlock">
 </view>
 
 
-
 <view class="news-item" wx:for="{{newsItem}}" wx:key>
-  <view class="news-words">
+  <view class="news-words" bindtap='onTapWebNews' id="{{item.newsNo}}">
     <view class="news-title">{{item.newsTitle}}</view>
     <view class="news-author">{{item.newsAuthor}}</view>
     <view class="news-time">{{item.newsTime}}</view>
