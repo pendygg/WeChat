@@ -1,0 +1,15 @@
+<!--pages/webNews/webNews.wxml-->
+<!--<web-view src="{{webAddress}}"></web-view>-->
+<view class="title-line"></view>
+<view class="news-title">{{newsTitle}}</view>
+<view class="wrapper">
+  <view class="news-author">{{newsAuthor}}</view>
+  <view class="news-time">{{newsTime}}</view>
+</view>
+
+<view class="image-wrapper">
+  <image class="news-image" src="{{newsImage}}" mode="scaleToFill"></image>
+</view>
+
+<view class="news-text">{{newsText}}</view>
+<view class="news-url" bindtap='copyUrl'>{{newsUrl}}</view>

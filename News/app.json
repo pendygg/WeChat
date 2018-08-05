@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/webNews/webNews"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "新闻小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}
